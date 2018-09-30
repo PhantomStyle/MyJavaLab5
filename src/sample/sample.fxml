@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <Button fx:id="avArrayButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#initAverageForArrayList" text="avArray" />
+      <LineChart id="addLC" fx:id="avArrayAddMap" prefHeight="361.0" prefWidth="295.0" title="avArrayAdd">
+        <xAxis>
+          <NumberAxis id="x" side="BOTTOM" fx:id="x1" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="y" fx:id="y1" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart id="remLC" fx:id="avArrayRemMap" layoutX="300.0" prefHeight="361.0" prefWidth="302.0" title="avArrayRem">
+        <xAxis>
+          <NumberAxis side="BOTTOM" fx:id="x2" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y2" side="LEFT" />
+        </yAxis>
+      </LineChart>
+
+       <LineChart id="addLC" fx:id="avLinkedAddMap" prefHeight="361.0" prefWidth="295.0" title="avLinkedAddMap">
+           <xAxis>
+               <NumberAxis id="x" side="BOTTOM" fx:id="x3" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis id="y" fx:id="y3" side="LEFT" />
+           </yAxis>
+       </LineChart>
+       <LineChart id="remLC" fx:id="avLinkedRemMap" layoutX="300.0" prefHeight="361.0" prefWidth="302.0" title="avLinkedRemMap">
+           <xAxis>
+               <NumberAxis side="BOTTOM" fx:id="x4" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis fx:id="y4" side="LEFT" />
+           </yAxis>
+       </LineChart>
+
+       <LineChart id="addLC" fx:id="totArrayAddMap" prefHeight="361.0" prefWidth="295.0" title="totArrayAddMap">
+           <xAxis>
+               <NumberAxis id="x" side="BOTTOM" fx:id="x5" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis id="y" fx:id="y5" side="LEFT" />
+           </yAxis>
+       </LineChart>
+       <LineChart id="remLC" fx:id="totArrayRemMap" layoutX="300.0" prefHeight="361.0" prefWidth="302.0" title="totArrayRemMap">
+           <xAxis>
+               <NumberAxis side="BOTTOM" fx:id="x6" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis fx:id="y6" side="LEFT" />
+           </yAxis>
+       </LineChart>
+
+       <LineChart id="addLC" fx:id="totLinkedAddMap" prefHeight="361.0" prefWidth="295.0" title="totLinkedAddMap">
+           <xAxis>
+               <NumberAxis id="x" side="BOTTOM" fx:id="x7" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis id="y" fx:id="y7" side="LEFT" />
+           </yAxis>
+       </LineChart>
+       <LineChart id="remLC" fx:id="totLinkedRemMap" layoutX="300.0" prefHeight="361.0" prefWidth="302.0" title="totLinkedRemMap">
+           <xAxis>
+               <NumberAxis side="BOTTOM" fx:id="x8" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis fx:id="y8" side="LEFT" />
+           </yAxis>
+       </LineChart>
+      <Button fx:id="avLinked" layoutX="122.0" layoutY="361.0" mnemonicParsing="false" onAction="#initAverageForLinkedList" text="avLinked" />
+      <Button fx:id="totArray" layoutX="325.0" layoutY="361.0" mnemonicParsing="false" onAction="#initTotalForArrayList" text="totArray" />
+      <Button fx:id="totLinked" layoutX="475.0" layoutY="361.0" mnemonicParsing="false" onAction="#initTotalForLinkedList" text="totLinked" />
+   </children>
+</AnchorPane>
